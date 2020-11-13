@@ -1,0 +1,25 @@
+@import "btn";
+@import "flpcrd";
+@import "moving";
+
+html,
+body {
+    font-size: 6 rem;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: brown;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin: 2vh;
+}
+
+$colors: ("green": green, "blue": blue, "white": white,  "black": black);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}

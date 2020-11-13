@@ -1,0 +1,142 @@
+.btn,
+.btn:link,
+.btn:visited {
+  text-transform: lowercase;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  background-color: green;
+  margin: 1rem auto;
+  font-size: 2rem;
+  border-radius: 10rem;
+  position: relative;
+}
+
+.btn-red {
+  background-color: color(aqua);
+  color: fff;
+}
+
+.btn::after {
+  background-color: color(aqua);
+  color: fff;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-box-shadow: 0 10px 0 0.5rem black;
+          box-shadow: 0 10px 0 0.5rem black;
+}
+
+.btn::after {
+  content: "";
+  display: block;
+  height: 50%;
+  width: 50%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn:hover::after {
+  -webkit-transform: scaleX(1.5);
+          transform: scaleX(1.5);
+  opacity: 0;
+}
+
+.btn:active {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-transform: scaleX(1.5);
+          transform: scaleX(1.5);
+}
+
+.container {
+  width: 50%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-container {
+  width: 10rem;
+  height: 5rem;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.card-container:hover .card {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  -webkit-animation: mymove 5s infinite;
+          animation: mymove 5s infinite;
+}
+
+@-webkit-keyframes mymove {
+  from {
+    left: 0rem;
+  }
+  to {
+    left: 113.557rem;
+  }
+}
+
+@keyframes mymove {
+  from {
+    left: 0rem;
+  }
+  to {
+    left: 113.557rem;
+  }
+}
+
+html,
+body {
+  font-size: 6 rem;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: brown;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  margin: 2vh;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,12 @@
+.square {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+    from {left: 0rem;}
+    to {left: 113.557rem;}
+}
