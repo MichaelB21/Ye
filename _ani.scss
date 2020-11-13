@@ -1,0 +1,28 @@
+.wrap {
+    padding: 100px 30px;
+  
+    .meter-wrap,
+    .meter {
+      width: 50vw;
+      height: 20px;
+      overflow: hidden;
+    }
+  
+    .meter {
+      width: 50vw;
+      height: 20px;
+      background: #6fd044;
+      transform: translate(-100%);
+      animation: meterAnime 1s ease 1s forwards;
+      animation-iteration-count: infinite;
+    }
+  }
+  
+  @keyframes meterAnime {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
